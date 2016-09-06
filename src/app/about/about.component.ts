@@ -17,6 +17,9 @@ console.log('`About` component loaded asynchronously');
     <div>
       For hot module reloading run
       <pre>npm run start:hmr</pre>
+      <button type="button" id="default" [(ngModel)]="singleModel" btnCheckbox>
+          Default
+      </button>
     </div>
     <div>
       <h3>
@@ -28,6 +31,8 @@ console.log('`About` component loaded asynchronously');
 })
 export class About {
   localState;
+  singleModle = true;
+
   constructor(public route: ActivatedRoute) {
 
   }

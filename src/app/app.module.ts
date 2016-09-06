@@ -14,9 +14,7 @@ import { ROUTES } from './app.routes';
 import { App } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState } from './app.service';
-import { Home } from './home';
 import { AboutModule } from './about/about.module';
-import { NoContent } from './no-content';
 import { XLarge } from './home/x-large';
 
 // Application wide providers
@@ -32,8 +30,6 @@ const APP_PROVIDERS = [
   bootstrap: [ App ],
   declarations: [
     App,
-    Home,
-    NoContent,
     XLarge
   ],
   imports: [ // import Angular's modules

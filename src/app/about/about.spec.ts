@@ -10,6 +10,7 @@ describe('About', () => {
   // provide our implementations or mocks to the dependency injector
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [AboutModule],
       providers: [
         AboutModule,
         // provide a better mock
@@ -30,11 +31,10 @@ describe('About', () => {
   }));
 
 
-  it('should log ngOnInit', inject([], () => {
+  it('should log ngOnInit', async(() => {
     let fixture = TestBed.createComponent(About);
     spyOn(console, 'log');
     expect(console.log).not.toHaveBeenCalled();
-
   }));
 
 });
