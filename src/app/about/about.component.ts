@@ -31,7 +31,7 @@ console.log('`About` component loaded asynchronously');
 })
 export class About {
   localState;
-  singleModle = true;
+  singleModel = true;
 
   constructor(public route: ActivatedRoute) {
 
